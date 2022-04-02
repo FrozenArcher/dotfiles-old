@@ -12,6 +12,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" VimPlugs
 call plug#begin()
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
@@ -31,6 +32,7 @@ Plug 'LoricAndre/OneTerm.nvim'
 Plug 'lewis6991/spellsitter.nvim'
 call plug#end()
 
+" set onedark colorscheme
 let g:onedark_config = {
     \ 'style': 'dark',
 \}
@@ -46,3 +48,8 @@ lua require('treesitter-cfg')
 lua require('colorizer').setup()
 lua require('gitsigns').setup()
 lua require('spellsitter').setup()
+
+" moves bar on init, for tree is enabled first.
+" AFTER nvim-tree is set up.
+lua require'tree'.setup()
+
