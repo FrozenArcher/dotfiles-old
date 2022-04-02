@@ -108,6 +108,8 @@ alias pm="sudo pacman "
 # $ conf add xxx, $ conf commit ..., $ conf push ..., etc.
 # just like "git".
 alias conf="/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME "
+alias nvz="nvim ~/.zshrc"
+alias nv="nvim "
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
