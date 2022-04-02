@@ -30,17 +30,20 @@ Plug 'lewis6991/gitsigns.nvim'
 "Plug 'nikvdp/neomux'
 Plug 'LoricAndre/OneTerm.nvim'
 Plug 'lewis6991/spellsitter.nvim'
+Plug 'ray-x/go.nvim'
 call plug#end()
 
 " global variables
 let g:nvim_tree_git_hl = 1
-let g:nvim_tree_highlight_opened_files = 1
 
 " set onedark colorscheme
 let g:onedark_config = {
     \ 'style': 'dark',
 \}
 colorscheme onedark
+
+" gofmt
+autocmd BufWritePre *.go :silent! lua require('go.format').goimport()
 
 " complex setups for plugins
 lua require('barbar-cfg')
@@ -52,3 +55,4 @@ lua require('treesitter-cfg')
 lua require('colorizer').setup()
 lua require('gitsigns').setup()
 lua require('spellsitter').setup()
+lua require('go').setup()
