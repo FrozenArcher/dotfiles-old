@@ -21,7 +21,7 @@ Plug 'glepnir/dashboard-nvim'
 Plug 'liuchengxu/vim-clap'
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'SmiteshP/nvim-gps'
 Plug 'mfussenegger/nvim-dap'
 Plug 'norcalli/nvim-colorizer.lua'
@@ -36,9 +36,13 @@ let g:onedark_config = {
 \}
 colorscheme onedark
 
+" complex setups for plugins
 lua require('barbar-cfg')
 lua require('nvim-tree-cfg')
 lua require('galaxy-cfg')
+lua require('treesitter-cfg')
+
+" breif setups for plugins
 lua require('colorizer').setup()
 lua require('gitsigns').setup()
 lua require('spellsitter').setup()
