@@ -32,6 +32,10 @@ Plug 'LoricAndre/OneTerm.nvim'
 Plug 'lewis6991/spellsitter.nvim'
 call plug#end()
 
+" global variables
+let g:nvim_tree_git_hl = 1
+let g:nvim_tree_highlight_opened_files = 1
+
 " set onedark colorscheme
 let g:onedark_config = {
     \ 'style': 'dark',
@@ -48,8 +52,3 @@ lua require('treesitter-cfg')
 lua require('colorizer').setup()
 lua require('gitsigns').setup()
 lua require('spellsitter').setup()
-
-" moves bar on init, for tree is enabled first.
-" AFTER nvim-tree is set up.
-lua require'tree'.setup()
-

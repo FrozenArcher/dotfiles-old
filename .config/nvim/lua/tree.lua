@@ -4,8 +4,8 @@ local offset = 24 + delta
 
 local M = {}
 -- move bufferline to offset
-M.move_bar = function (offset)
-    require'bufferline.state'.set_offset(offset, 'Nvim Tree')
+M.move_bar = function (_offset)
+    require'bufferline.state'.set_offset(_offset, 'Nvim Tree')
 end
 -- toggle tree & move barbar
 M.toggle = function ()
