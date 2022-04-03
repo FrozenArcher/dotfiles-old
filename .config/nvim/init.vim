@@ -43,7 +43,4 @@ let g:onedark_config = {
 \}
 colorscheme onedark
 
-" gofmt
-autocmd BufWritePre *.go :silent! lua require('go.format').goimport()
-
 lua require'config'
