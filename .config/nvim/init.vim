@@ -32,10 +32,12 @@ Plug 'lewis6991/spellsitter.nvim'
 Plug 'ray-x/go.nvim'
 Plug 'ellisonleao/glow.nvim'
 Plug 'numToStr/FTerm.nvim'
+Plug 'yamatsum/nvim-cursorline'
 call plug#end()
 
 " global variables
 let g:nvim_tree_git_hl = 1
+let g:cursorline_timeout = 400
 
 " set onedark colorscheme
 let g:onedark_config = {
