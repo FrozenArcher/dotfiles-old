@@ -1,3 +1,4 @@
+" recognize json comments
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
 inoremap <silent><expr> <TAB>
