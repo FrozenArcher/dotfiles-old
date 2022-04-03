@@ -1,5 +1,5 @@
 -- gps should be set up before galaxyline.
-require('nvim-gps').setup()
+require('gps-cfg')
 -- complex setups for plugins
 require('barbar-cfg')
 require('nvim-tree-cfg')

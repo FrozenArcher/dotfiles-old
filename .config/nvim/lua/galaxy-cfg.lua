@@ -65,8 +65,10 @@ local colors = {
     orange = '#FF8800',
     purple = '#5d4d7a',
     magenta = '#c678dd',
-    blue = '#51afef';
-    red = '#ec5f67'
+    blue = '#51afef',
+    red = '#ec5f67',
+
+    light_grey = '#888888',
 }
 
 
@@ -384,12 +386,23 @@ nvimGPS = {
         condition = function()
             return gps.is_available()
         end,
-        icon = '  ',
-        highlight = {colors.yellow,colors.bg},
+        icon = ' ',
+        highlight = {colors.light_grey, colors.bg},
     }
 }
 
+---------------------------------------
+-- RIGHT
+---------------------------------------
 
+gls.right[1] = {
+    CocStatus = {
+     provider = CocStatus,
+     separator = ' ',
+     highlight = {colors.green,colors.bg},
+     icon = '   '
+    }
+}
 
 gls.right[2] = {
   DiagnosticWarn = {
@@ -399,18 +412,13 @@ gls.right[2] = {
   }
 }
 
-
-gls.right[1] = {
-    CocStatus = {
-     provider = CocStatus,
-     highlight = {colors.green,colors.bg},
-     icon = '   '
+gls.right[3] = {
+    Space = {
+        provider = function () return ' ' end
     }
 }
 
-
-
-gls.right[3]= {
+gls.right[4]= {
   FileFormat = {
     provider = 'FileFormat',
     separator = ' ',
@@ -418,7 +426,7 @@ gls.right[3]= {
     highlight = {colors.fg,colors.line_bg,'bold'},
   }
 }
-gls.right[4] = {
+gls.right[5] = {
   Debug = {
     provider = DebugInfo,
     separator = ' ',
@@ -427,7 +435,7 @@ gls.right[4] = {
     highlight = {colors.red,colors.line_bg,'bold'},
   }
 }
-gls.right[5] = {
+gls.right[6] = {
   LineInfo = {
     provider = 'LineColumn',
     separator = ' | ',
@@ -435,7 +443,7 @@ gls.right[5] = {
     highlight = {colors.fg,colors.line_bg},
   },
 }
-gls.right[6] = {
+gls.right[7] = {
   PerCent = {
     provider = 'LinePercent',
     separator = ' ',
