@@ -17,11 +17,5 @@ M.toggle = function ()
         require'nvim-tree'.find_file(true)
     end
 end
--- run this on init
-M.setup = function ()
-    if view.is_visible() then
-        M.move_bar(offset)
-    end
-end
 
 return M

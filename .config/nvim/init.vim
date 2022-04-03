@@ -27,10 +27,11 @@ Plug 'SmiteshP/nvim-gps'
 Plug 'mfussenegger/nvim-dap'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'lewis6991/gitsigns.nvim'
-"Plug 'nikvdp/neomux'
 Plug 'LoricAndre/OneTerm.nvim'
 Plug 'lewis6991/spellsitter.nvim'
 Plug 'ray-x/go.nvim'
+Plug 'ellisonleao/glow.nvim'
+Plug 'numToStr/FTerm.nvim'
 call plug#end()
 
 " global variables
@@ -50,6 +51,7 @@ lua require('barbar-cfg')
 lua require('nvim-tree-cfg')
 lua require('galaxy-cfg')
 lua require('treesitter-cfg')
+lua require('fterm-cfg')
 
 " breif setups for plugins
 lua require('colorizer').setup()
