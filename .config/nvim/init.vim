@@ -14,30 +14,47 @@ set expandtab
 
 " VimPlugs
 call plug#begin()
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'romgrk/barbar.nvim'
-Plug 'kyazdani42/nvim-tree.lua'
-Plug 'navarasu/onedark.nvim'
-Plug 'glepnir/dashboard-nvim'
-Plug 'liuchengxu/vim-clap'
-Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+" COC!!!
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" web devicons, essential for various visual plugins
+Plug 'kyazdani42/nvim-web-devicons'
+" the tab bar
+Plug 'romgrk/barbar.nvim'
+" the file explorer
+Plug 'kyazdani42/nvim-tree.lua'
+" onedark color scheme
+Plug 'navarasu/onedark.nvim'
+" dashboard shown on startup
+Plug 'glepnir/dashboard-nvim'
+" a file finder for vim
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+" the awesome statusline
+Plug 'glepnir/galaxyline.nvim', {'branch': 'main'}
+" file highlighter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" showing where you are when programming.
 Plug 'SmiteshP/nvim-gps'
+" the debug adapter
 Plug 'mfussenegger/nvim-dap'
+" colorizing colors, e.g.#aaaaaa
 Plug 'norcalli/nvim-colorizer.lua'
+" showing lines on the left to show git info
 Plug 'lewis6991/gitsigns.nvim'
+" the floating command runner
 Plug 'LoricAndre/OneTerm.nvim'
-Plug 'lewis6991/spellsitter.nvim'
+" golang support
 Plug 'ray-x/go.nvim'
+" markdown preview
 Plug 'ellisonleao/glow.nvim'
+" the floating terminal
 Plug 'numToStr/FTerm.nvim'
+" beautify cursorline
 Plug 'yamatsum/nvim-cursorline'
 call plug#end()
 
 " global variables
 let g:nvim_tree_git_hl = 1
-let g:cursorline_timeout = 400
+let g:cursorline_timeout = 800
 
 " set onedark colorscheme
 let g:onedark_config = {
