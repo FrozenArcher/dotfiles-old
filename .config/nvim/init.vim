@@ -46,15 +46,4 @@ colorscheme onedark
 " gofmt
 autocmd BufWritePre *.go :silent! lua require('go.format').goimport()
 
-" complex setups for plugins
-lua require('barbar-cfg')
-lua require('nvim-tree-cfg')
-lua require('galaxy-cfg')
-lua require('treesitter-cfg')
-lua require('fterm-cfg')
-
-" breif setups for plugins
-lua require('colorizer').setup()
-lua require('gitsigns').setup()
-lua require('spellsitter').setup()
-lua require('go').setup()
+lua require'config'
