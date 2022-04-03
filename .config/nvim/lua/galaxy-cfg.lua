@@ -346,7 +346,6 @@ gls.left[11] = {
      highlight = {colors.yellow,colors.bg},
     }
 }
-
 gls.left[12] = {
   DiagnosticError = {
     provider = 'DiagnosticError',
@@ -359,23 +358,6 @@ gls.left[13] = {
     provider = function () return '' end
   }
 }
-gls.left[14] = {
-  DiagnosticWarn = {
-    provider = 'DiagnosticWarn',
-    icon = '   ',
-    highlight = {colors.yellow,colors.bg},
-  }
-}
-
-
-gls.left[15] = {
-    CocStatus = {
-     provider = CocStatus,
-     highlight = {colors.green,colors.bg},
-     icon = '   '
-    }
-}
-
 
 -- gls.left[16] = {
 --   CocFunc = {
@@ -407,7 +389,28 @@ nvimGPS = {
     }
 }
 
-gls.right[1]= {
+
+
+gls.right[2] = {
+  DiagnosticWarn = {
+    provider = 'DiagnosticWarn',
+    icon = '   ',
+    highlight = {colors.yellow,colors.bg},
+  }
+}
+
+
+gls.right[1] = {
+    CocStatus = {
+     provider = CocStatus,
+     highlight = {colors.green,colors.bg},
+     icon = '   '
+    }
+}
+
+
+
+gls.right[3]= {
   FileFormat = {
     provider = 'FileFormat',
     separator = ' ',
@@ -415,16 +418,16 @@ gls.right[1]= {
     highlight = {colors.fg,colors.line_bg,'bold'},
   }
 }
-gls.right[2] = {
+gls.right[4] = {
   Debug = {
     provider = DebugInfo,
     separator = ' ',
-    separator_highlight = {colors.blue,colors.line_bg},
+    --separator_highlight = {colors.blue,colors.line_bg},
     separator_highlight = {colors.bg,colors.line_bg},
     highlight = {colors.red,colors.line_bg,'bold'},
   }
 }
-gls.right[4] = {
+gls.right[5] = {
   LineInfo = {
     provider = 'LineColumn',
     separator = ' | ',
@@ -432,7 +435,7 @@ gls.right[4] = {
     highlight = {colors.fg,colors.line_bg},
   },
 }
-gls.right[5] = {
+gls.right[6] = {
   PerCent = {
     provider = 'LinePercent',
     separator = ' ',
