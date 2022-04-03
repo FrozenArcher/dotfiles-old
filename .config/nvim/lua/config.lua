@@ -1,13 +1,14 @@
 -- gps should be set up before galaxyline.
-require('gps-cfg')
+require("gps-cfg")
 -- complex setups for plugins
-require('barbar-cfg')
-require('nvim-tree-cfg')
-require('galaxy-cfg')
-require('treesitter-cfg')
-require('fterm-cfg')
+require("barbar-cfg")
+require("nvim-tree-cfg")
+require("galaxy-cfg")
+require("treesitter-cfg")
+require("fterm-cfg")
+require("formatter-cfg")
 
 -- breif setups for plugins
-require('colorizer').setup()
-require('gitsigns').setup()
-require('go').setup()
+require("colorizer").setup()
+require("gitsigns").setup()
+require("go").setup()

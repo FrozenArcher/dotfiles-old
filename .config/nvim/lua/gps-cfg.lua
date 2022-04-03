@@ -1,4 +1,4 @@
 require('nvim-gps').setup({
     separator = " > ",
-    depth = 3
+    depth = 2
 })

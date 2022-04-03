@@ -50,6 +50,8 @@ Plug 'ellisonleao/glow.nvim'
 Plug 'numToStr/FTerm.nvim'
 " beautify cursorline
 Plug 'yamatsum/nvim-cursorline'
+" code formatter
+Plug 'mhartington/formatter.nvim'
 call plug#end()
 
 " global variables
