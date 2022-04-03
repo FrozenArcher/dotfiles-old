@@ -104,13 +104,17 @@ fi
 # For a full list of active aliases, run `alias`.
 alias sczsh="source ~/.zshrc"
 alias pm="sudo pacman "
+alias nvz="nvim ~/.zshrc"
+alias nv="nvim "
+alias ra="ranger"
 # in order to sync my dotfiles to remote.
 # $ conf add xxx, $ conf commit ..., $ conf push ..., etc.
 # just like "git".
 alias conf="/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME "
-alias nvz="nvim ~/.zshrc"
-alias nv="nvim "
-alias ra="ranger"
+alias confa="conf add "
+alias confc="conf commit -m"
+alias confs="conf status"
+alias confp="conf push -u origin master"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
