@@ -8,5 +8,6 @@ see [this](https://www.atlassian.com/git/tutorials/dotfiles) for more informatio
 
 ## commit message
 
-use `(xx)` to mark the category of config file
-*e.g.* `conf commit -m "(nvim)modified init.vim"`
+use `(xx)` to mark the category of config file (follow a space)
+
+*e.g.* `conf commit -m "(nvim) modified init.vim"`
