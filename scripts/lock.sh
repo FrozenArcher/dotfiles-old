@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 lock() {
-    i3lock
+    $HOME/scripts/lockwrapper.sh -l -e
 }
 
 case "$1" in
