@@ -1,6 +1,6 @@
 #!/bin/bash
 lock() {
-    $HOME/scripts/lockwrapper.sh -l -e
+    mantablockscreen -sc
 }
 
 case "$1" in
