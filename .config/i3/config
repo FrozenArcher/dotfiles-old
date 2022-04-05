@@ -51,6 +51,9 @@ exec --no-startup-id ~/.fehbg &
 # enable transparent window
 exec --no-startup-id compton -b
 
+# run cfw at startup
+exec cfw
+
 # enable polybar
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh --forest
 
