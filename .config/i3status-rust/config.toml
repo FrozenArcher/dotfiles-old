@@ -5,7 +5,13 @@ icons = "awesome"
 block = "disk_space"
 path = "/"
 info_type = "used"
-format = "{icon} {used}/{total} ({available} free)"
+format = "{icon}  [/] {used}/{total}"
+
+[[block]]
+block = "disk_space"
+path = "/home"
+info_type = "used"
+format = "[/home] {used}/{total}"
 
 [[block]]
 block = "memory"
@@ -18,10 +24,10 @@ block = "cpu"
 interval = 1
 format = " {utilization}"
 
-[[block]]
-block = "load"
-interval = 1
-format = " {1m}"
+#[[block]]
+#block = "load"
+#interval = 1
+#format = " {1m}"
 
 [[block]]
 block = "sound"
