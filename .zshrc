@@ -114,6 +114,10 @@ alias conf="/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME "
 alias confa="conf add "
 alias confc="conf commit -m"
 alias confs="conf status"
+# push commands.
+# you may use the commands like this:
+# $ confp gh m
+# to push master branch to github.
 alias confp="conf push -u "
 alias ge="origin "
 alias gh="extra "
