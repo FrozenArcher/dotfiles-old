@@ -122,6 +122,8 @@ alias confp="conf push -u "
 alias ge="origin "
 alias gh="extra "
 alias m="master"
+# So, for convenience, I added this alias (push all):
+alias confpa="confp ge m && confp gh m"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
