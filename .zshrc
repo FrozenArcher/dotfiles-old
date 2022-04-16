@@ -114,7 +114,10 @@ alias conf="/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME "
 alias confa="conf add "
 alias confc="conf commit -m"
 alias confs="conf status"
-alias confp="conf push -u origin master"
+alias confp="conf push -u "
+alias ge="origin "
+alias gh="extra "
+alias m="master"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
