@@ -52,6 +52,8 @@ Plug 'numToStr/FTerm.nvim'
 Plug 'yamatsum/nvim-cursorline'
 " code formatter
 Plug 'mhartington/formatter.nvim'
+" kitty config highlighter
+Plug 'fladson/vim-kitty'
 call plug#end()
 
 " global variables
