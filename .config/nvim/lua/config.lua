@@ -1,8 +1,9 @@
 -- gps should be set up before galaxyline.
 require("gps-cfg")
 -- complex setups for plugins
-require("barbar-cfg")
+-- tree should be enabled before barbar.
 require("nvim-tree-cfg")
+require("barbar-cfg")
 require("galaxy-cfg")
 require("treesitter-cfg")
 require("fterm-cfg")
