@@ -2,27 +2,32 @@
 
 我的ArchLinux配置文件 ;)
 
+Dotfiles for Archlinux.
+
+The softwares are totally Open Source.
+
 ## How to use
 
 see [this](https://www.atlassian.com/git/tutorials/dotfiles) for more information.
 
-## commit message
+## Contents
 
-use `(xx)` to mark the category of config file (follow a space)
+### Terminal
 
-*e.g.* `conf commit -m "(nvim) modified init.vim"`
+Current terminal: Alacritty for daily use, and kitty for file browse (especially when you want to preview images in ranger)
 
-## Categories
+### Text Editors
 
-1. `tty`: Terminal settings (alacritty)
+Vim and NeoVim. Vim is configured as simple as possible, which can be used out of desktop evironments. The main text editor is NeoVim, which is configured with tons of features.
 
-2. `nvim` `vim`: Text editor settings (nvim/vim)
+### Desktop Environments
 
-3. `i3`: DE settings (i3)
+i3 and sway's config file. I'm using both of them.
 
-4. `env`: Environments (xprofile, etc)
+### Shell
 
-5. `zsh`: Shell settings (zsh)
+ZSH config file, zshrc, p10kconfig, etc.
 
-6. `repo`: Git repository settings (README.md, etc)
+### Environment
 
+gitconfig, xprofile, etc.
