@@ -19,7 +19,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -110,6 +110,10 @@ exec swayidle -w \
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+
+    # Lock screen
+    bindsym $mod+Shift+x exec --no-startup-id $HOME/scripts/locksway.sh
+
 #
 # Workspaces:
 #
