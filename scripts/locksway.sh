@@ -1,1 +1,1 @@
-swaylock -f -e -i ~/Downloads/117326.jpg
+swaylock -f -e -i ~/assets/lockscreen.jpg
