@@ -31,3 +31,5 @@ ZSH config file, zshrc, p10kconfig, etc.
 ### Environment
 
 gitconfig, xprofile, etc.
+
+including proxy setting for wget.
