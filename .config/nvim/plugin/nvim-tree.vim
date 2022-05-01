@@ -1,4 +1,4 @@
-"nnoremap <silent> <C-n> :NvimTreeToggle<CR>
+nnoremap <silent> <C-n> :NvimTreeToggle<CR>
 "nnoremap <silent> <leader>r :NvimTreeRefresh<CR>
 nnoremap <silent> <leader>n :NvimTreeFindFile<CR>
 " More available functions:
