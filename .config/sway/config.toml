@@ -1,0 +1,51 @@
+theme = "modern"
+icons = "awesome"
+
+[[block]]
+block = "disk_space"
+path = "/"
+info_type = "used"
+format = "{icon}  [/] {used}/{total}"
+
+[[block]]
+block = "disk_space"
+path = "/home"
+info_type = "used"
+format = "[/home] {used}/{total}"
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{mem_used_percents}"
+format_swap = "{swap_used_percents}"
+
+[[block]]
+block = "cpu"
+interval = 1
+format = " {utilization}"
+
+#[[block]]
+#block = "load"
+#interval = 1
+#format = " {1m}"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "battery"
+interval = 10
+allow_missing = true
+format = "  {percentage}"
+
+[[block]]
+block = "networkmanager"
+on_click = "kitty nmtui"
+interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
+interface_name_include = []
+device_format = "{icon} {ap}"
+
+[[block]]
+block = "time"
+interval = 5
+format = " %a %d/%m %R"
