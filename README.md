@@ -14,7 +14,7 @@ see [this](https://www.atlassian.com/git/tutorials/dotfiles) for more informatio
 
 ### Terminal
 
-Current terminal: Alacritty for daily use, and kitty for file browse (especially when you want to preview images in ranger)
+Currently using kitty, because you can't browse pictures in alacritty using w3m in sway.
 
 ### Text Editors
 
@@ -22,7 +22,7 @@ Vim and NeoVim. Vim is configured as simple as possible, which can be used out o
 
 ### Desktop Environments
 
-i3 and sway's config file. I'm using both of them.
+i3 and sway's config file. Currently using both of them.
 
 ### Shell
 
