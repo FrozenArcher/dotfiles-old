@@ -107,6 +107,8 @@ alias pm="sudo pacman "
 alias nvz="nvim ~/.zshrc"
 alias nv="nvim "
 alias ra="ranger"
+alias c="clear"
+
 # in order to sync my dotfiles to remote.
 # $ conf add xxx, $ conf commit ..., $ conf push ..., etc.
 # just like "git".
