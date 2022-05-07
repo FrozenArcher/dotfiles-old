@@ -3,7 +3,8 @@ require("gps-cfg")
 -- complex setups for plugins
 -- tree should be enabled before barbar.
 require("nvim-tree-cfg")
-require("barbar-cfg")
+--require("barbar-cfg")
+require("buffer-cfg")
 require("galaxy-cfg")
 require("treesitter-cfg")
 require("fterm-cfg")

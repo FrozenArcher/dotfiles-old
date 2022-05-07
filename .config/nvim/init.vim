@@ -19,7 +19,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " web devicons, essential for various visual plugins
 Plug 'kyazdani42/nvim-web-devicons'
 " the tab bar
-Plug 'romgrk/barbar.nvim'
+"Plug 'romgrk/barbar.nvim'
 " the file explorer
 Plug 'kyazdani42/nvim-tree.lua'
 " onedark color scheme
@@ -54,6 +54,8 @@ Plug 'yamatsum/nvim-cursorline'
 Plug 'mhartington/formatter.nvim'
 " kitty config highlighter
 Plug 'fladson/vim-kitty'
+
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 call plug#end()
 
 " global variables
