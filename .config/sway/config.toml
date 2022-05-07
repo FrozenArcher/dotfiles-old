@@ -33,12 +33,6 @@ format = " {utilization}"
 block = "sound"
 
 [[block]]
-block = "battery"
-interval = 10
-allow_missing = true
-format = "  {percentage}"
-
-[[block]]
 block = "networkmanager"
 on_click = "kitty nmtui"
 interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
