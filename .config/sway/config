@@ -4,7 +4,7 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-font pango:Sarasa Mono SC Nerd 9
+font pango:JetBrainsMono Nerd Font 9
 
 exec cfw
 exec --no-startup-id fcitx5
