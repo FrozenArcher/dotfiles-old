@@ -28,7 +28,7 @@ set $menu rofi -show run
 
 ### Output configuration
 #
-output "*" bg ~/assets/929964.jpg fill
+output "*" bg ~/assets/desktop.jpg fill
 
 # Example configuration:
 #
@@ -208,8 +208,9 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    status_command /bin/i3status-rs $HOME/.config/sway/config.toml
+    status_command /bin/i3status-rs $HOME/.config/sway/i3bar.toml
     #status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done   
+    position top
     colors {
         separator #666666
         background #222222
