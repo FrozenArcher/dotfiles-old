@@ -9,6 +9,7 @@ require("galaxy-cfg")
 require("treesitter-cfg")
 require("fterm-cfg")
 require("formatter-cfg")
+require("alpha-cfg")
 
 -- breif setups for plugins
 require("colorizer").setup()

@@ -23,7 +23,8 @@ Plug 'kyazdani42/nvim-tree.lua'
 " onedark color scheme
 Plug 'navarasu/onedark.nvim'
 " dashboard shown on startup
-Plug 'glepnir/dashboard-nvim'
+"Plug 'glepnir/dashboard-nvim'
+Plug 'goolord/alpha-nvim'
 " a file finder for vim
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 " the awesome statusline
