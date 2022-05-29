@@ -208,18 +208,7 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    status_command /bin/i3status-rs $HOME/.config/sway/i3bar.toml
-    #status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done   
-    position top
-    colors {
-        separator #666666
-        background #222222
-        statusline #dddddd
-        focused_workspace #999999 #999999 #000000
-        active_workspace #333333 #333333 #ffffff
-        inactive_workspace #333333 #333333 #888888
-        urgent_workspace #2f343a #900000 #ffffff
-    }
+    swaybar_command waybar
 }
 
 ### Window Settings
