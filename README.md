@@ -1,3 +1,7 @@
+# !! DEPRICATED
+## my config files had moved to new repository [archconfig](https://github.com/FrozenArcher/archconfig.git)
+
+
 # Dotfiles
 
 我的ArchLinux配置文件 ;)
